@@ -1,4 +1,4 @@
-# Coleção-de-Consoles
+# Coleção de Consoles
 
 A ideia desse projeto é imaginar que há uma caixa onde o usuário coleciona consoles. 
 
