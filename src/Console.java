@@ -47,11 +47,9 @@ public class Console {
 
     @Override
     public String toString() {
-        return "Console{" +
-                "nome='" + nome + '\'' +
-                ", fabricante='" + fabricante + '\'' +
-                ", ano=" + ano +
-                ", geracao=" + geracao +
-                '}';
+        return  "Console: " + nome +
+                "\nFabricante: " + fabricante +
+                "\nAno: " + ano +
+                "\nGeração: " + geracao +"ª Geração";
     }
 }
