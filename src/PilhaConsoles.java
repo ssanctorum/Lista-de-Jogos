@@ -1,7 +1,5 @@
 public class PilhaConsoles {
 
+    private Console[] pilhaDeConsoles = new Console[5];
 
-
-    private Console[] pilhaConsole;
-    private int topoDaPilha;
 }
