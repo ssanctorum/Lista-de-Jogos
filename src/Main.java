@@ -4,17 +4,18 @@ public class Main {
 
     public static void main (String[] args){
 
+        Metodos metodos = new Metodos();
         int opcaoLoop = 99;
 
         do {
             try {
-                String primeiroInput = JOptionPane.showInputDialog(null, "Bem-vindo a sua caixa de coleção de consoles!\n\nSelecione a opção desejada:", "Consoles na Caixa", JOptionPane.PLAIN_MESSAGE);
+                String primeiroInput = JOptionPane.showInputDialog(null, "Bem-vindo a sua caixa de coleção de consoles!\n\nSelecione a opção desejada:\n\n[1] - Adicionar console\n[2] - Remover console\n[3] - Buscar console\n[4] - Listar consoles\n[5] - Buscar consoles\n\n", "Consoles na Caixa", JOptionPane.PLAIN_MESSAGE);
 
                 if (primeiroInput == null){
                     return;
                 }
 
-                if (primeiroInput.isEmpty()){
+                if (primeiroInput.isBlank()){
                     JOptionPane.showMessageDialog(null, "Você não digitou nada!", "Consoles na Caixa",JOptionPane.INFORMATION_MESSAGE);
                     continue;
                 }
@@ -24,7 +25,7 @@ public class Main {
                 switch (primeiroInputInt){
 
                     case 1:
-                        System.out.println("case1");
+                        metodos.adicionarConsole();
                         break;
 
                     case 2:
