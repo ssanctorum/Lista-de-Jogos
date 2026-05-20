@@ -1,9 +1,9 @@
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class Main {
 
     public static void main (String[] args){
-
+        PilhaConsoles pilhaConsoles = new PilhaConsoles();
         Metodos metodos = new Metodos();
         int opcaoLoop = 99;
 
@@ -25,7 +25,7 @@ public class Main {
                 switch (primeiroInputInt){
 
                     case 1:
-                        metodos.adicionarConsole();
+                        metodos.adicionarConsole(pilhaConsoles);
                         break;
 
                     case 2:
