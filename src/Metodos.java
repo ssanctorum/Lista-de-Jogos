@@ -92,9 +92,6 @@ public class Metodos {
 
     public void listarConsoles(PilhaConsoles pilhaConsoles){
         pilhaConsoles.pilhaListar();
-
-        /// ainda nao testei ///
-        ///preciso terminar
     }
 
     public void contarConsoles(){
