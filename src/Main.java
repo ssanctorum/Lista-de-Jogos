@@ -37,7 +37,7 @@ public class Main {
                         break;
 
                     case 4:
-                        System.out.println("case4");
+                        metodos.listarConsoles(pilhaConsoles);
                         break;
 
                     case 5:
