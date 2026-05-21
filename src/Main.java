@@ -35,19 +35,19 @@ public class Main {
                         break;
 
                     case 2:
-                        System.out.println("case2");
+//                        metodos.removerConsole(pilhaConsoles);
                         break;
 
                     case 3:
-                        metodos.buscarConsole(pilhaConsoles);
+//                        metodos.buscarConsole(pilhaConsoles);
                         break;
 
                     case 4:
-                        metodos.listarConsoles(pilhaConsoles);
+//                        metodos.listarConsoles(pilhaConsoles);
                         break;
 
                     case 5:
-                        System.out.println("case5");
+                        metodos.contarConsoles(pilhaConsoles);
                         break;
 
                     default: JOptionPane.showMessageDialog(null, "Opção inválida.", "Consoles na Caixa", JOptionPane.INFORMATION_MESSAGE);
