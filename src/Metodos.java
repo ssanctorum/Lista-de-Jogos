@@ -2,6 +2,7 @@ import javax.swing.JOptionPane;
 
 public class Metodos {
 
+    /// aqui ta ok
     public void adicionarConsole(PilhaConsoles pilhaConsoles){
         String nomeConsole = "";
 
@@ -83,52 +84,58 @@ public class Metodos {
     }
 
     /// AJEITAR ESSE
-//    public void removerConsole(PilhaConsoles pilhaConsoles){
-//
-//        if (pilhaConsoles.getTopoDosConsoles() == 0){
-//            JOptionPane.showMessageDialog(null, "Não há nenhum console na caixa.", "Remover console", JOptionPane.INFORMATION_MESSAGE);
-//            return;
-//        }
-//
-//        pilhaConsoles.pilhaPop();
-//    }
+    public void removerConsole(PilhaConsoles pilhaConsoles){
 
-    /// AJEITAR ESSE
-//    public void buscarConsole(PilhaConsoles pilhaConsoles){
-//
-//        if (pilhaConsoles.getTopoDosConsoles() == 0){
-//            JOptionPane.showMessageDialog(null,"Não há nenhum console na caixa.", "Buscar console", JOptionPane.INFORMATION_MESSAGE);
-//            return;
-//        }
-//
-//        String consoleABuscar = JOptionPane.showInputDialog(null,"Insira exatamente nome do console a ser pesquisado:","Buscar console",JOptionPane.PLAIN_MESSAGE);
-//
-//        if (consoleABuscar == null){
-//            return;
-//        }
-//
-//        if (consoleABuscar.isBlank()){
-//            JOptionPane.showMessageDialog(null,"Você não digitou nada!", "Buscar console", JOptionPane.INFORMATION_MESSAGE);
-//            return;
-//        }
-//
-//        pilhaConsoles.pilhaBuscar(consoleABuscar.trim());
-//    }
+        if (pilhaConsoles.getTopoDosConsoles() == 0){
+            JOptionPane.showMessageDialog(null, "Não há nenhum console na caixa.", "Remover console", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
 
-    /// AJEITAR ESSE
-//    public void listarConsoles(PilhaConsoles pilhaConsoles){
-//
-//        if (pilhaConsoles.getTopoDosConsoles() == 0){
-//            JOptionPane.showMessageDialog(null, "Não há nenhum console na caixa.", "Listar consoles", JOptionPane.INFORMATION_MESSAGE);
-//            return;
-//        }
-//
-//        String listaRetorno = pilhaConsoles.pilhaListar();
-//
-//        JOptionPane.showMessageDialog(null,listaRetorno,"Listar consoles", JOptionPane.PLAIN_MESSAGE);
-//
-//    }
+        pilhaConsoles.pilhaPop();
 
+        JOptionPane.showMessageDialog(null,"O console:\n" + "\nfoi removido da pilha.", "Remover console",JOptionPane.INFORMATION_MESSAGE);
+
+    }
+
+    /// aqui ta ok
+    public void buscarConsole(PilhaConsoles pilhaConsoles){
+
+        if (pilhaConsoles.getTopoDosConsoles() == 0){
+            JOptionPane.showMessageDialog(null,"Não há nenhum console na caixa.", "Buscar console", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        String consoleABuscar = JOptionPane.showInputDialog(null,"Insira exatamente nome do console a ser pesquisado:","Buscar console",JOptionPane.PLAIN_MESSAGE);
+
+        if (consoleABuscar == null){
+            return;
+        }
+
+        if (consoleABuscar.isBlank()){
+            JOptionPane.showMessageDialog(null,"Você não digitou nada!", "Buscar console", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        String consoleEncontrado = pilhaConsoles.pilhaBuscar(consoleABuscar.trim());
+
+        JOptionPane.showMessageDialog(null, consoleEncontrado, "Buscar console", JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /// aqui ta ok
+    public void listarConsoles(PilhaConsoles pilhaConsoles){
+
+        if (pilhaConsoles.getTopoDosConsoles() == 0){
+            JOptionPane.showMessageDialog(null, "Não há nenhum console na caixa.", "Listar consoles", JOptionPane.INFORMATION_MESSAGE);
+            return;
+        }
+
+        String listaRetorno = pilhaConsoles.pilhaListar();
+
+        JOptionPane.showMessageDialog(null,listaRetorno,"Listar consoles", JOptionPane.PLAIN_MESSAGE);
+
+    }
+
+    /// aqui ta ok
     public void contarConsoles(PilhaConsoles pilhaConsoles){
 
         if (pilhaConsoles.getTopoDosConsoles() == 0){
