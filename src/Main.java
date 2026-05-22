@@ -9,8 +9,6 @@ public class Main {
 
         do {
             try {
-                /// nem sabia que JOptionPane suportava formatação html kkkkkkkkk
-                /// ps: nao sei formatar em html rs
                 String primeiroInput = JOptionPane.showInputDialog(null, "<html>Bem-vindo a sua caixa de coleção de consoles!" +
                         "<p><p>Selecione a opção desejada:" +
                         "<p><p>[1] - Adicionar console<p>[2] - Remover console<p>[3] - Buscar console<p>[4] - Listar consoles<p>[5] - Contar consoles" +
@@ -35,15 +33,15 @@ public class Main {
                         break;
 
                     case 2:
-//                        metodos.removerConsole(pilhaConsoles);
+                        metodos.removerConsole(pilhaConsoles);
                         break;
 
                     case 3:
-//                        metodos.buscarConsole(pilhaConsoles);
+                        metodos.buscarConsole(pilhaConsoles);
                         break;
 
                     case 4:
-//                        metodos.listarConsoles(pilhaConsoles);
+                        metodos.listarConsoles(pilhaConsoles);
                         break;
 
                     case 5:
