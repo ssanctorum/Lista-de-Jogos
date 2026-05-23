@@ -2,7 +2,6 @@ import javax.swing.JOptionPane;
 
 public class Metodos {
 
-    /// aqui ta ok
     public void adicionarConsole(PilhaConsoles pilhaConsoles){
         String nomeConsole = "";
 
@@ -83,7 +82,6 @@ public class Metodos {
 
     }
 
-    /// AJEITAR ESSE
     public void removerConsole(PilhaConsoles pilhaConsoles){
 
         if (pilhaConsoles.getTopoDosConsoles() == 0){
@@ -91,13 +89,12 @@ public class Metodos {
             return;
         }
 
-        pilhaConsoles.pilhaPop();
+        String consoleRemovido = pilhaConsoles.pilhaPop();
 
-        JOptionPane.showMessageDialog(null,"O console:\n" + "\nfoi removido da pilha.", "Remover console",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null,"O console:\n\n" + consoleRemovido + "\n\nfoi removido da pilha.", "Remover console",JOptionPane.INFORMATION_MESSAGE);
 
     }
 
-    /// aqui ta ok
     public void buscarConsole(PilhaConsoles pilhaConsoles){
 
         if (pilhaConsoles.getTopoDosConsoles() == 0){
@@ -121,7 +118,6 @@ public class Metodos {
         JOptionPane.showMessageDialog(null, consoleEncontrado, "Buscar console", JOptionPane.PLAIN_MESSAGE);
     }
 
-    /// aqui ta ok
     public void listarConsoles(PilhaConsoles pilhaConsoles){
 
         if (pilhaConsoles.getTopoDosConsoles() == 0){
@@ -135,7 +131,6 @@ public class Metodos {
 
     }
 
-    /// aqui ta ok
     public void contarConsoles(PilhaConsoles pilhaConsoles){
 
         if (pilhaConsoles.getTopoDosConsoles() == 0){
